@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>StartupPay</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>StartupPay - Payroll Engine</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
+<header>
+<h1>💸 StartupPay</h1>
+<p>Motor de Nómina Automático</p>
+</header>
 
-    <h1>StartupPay — Payroll Engine 💸</h1>
-    <p class="subtitulo">Sistema de generación de nómina para freelancers</p>
+<main class="container">
 
-    <div id="nomina"></div>
+<section class="card">
 
-    <div class="total">
-      <h2 id="totalNomina"></h2>
-    </div>
+<h2>Freelancers del mes</h2>
 
-  </div>
+<p>Presiona el botón para calcular automáticamente los pagos usando un bucle <strong>for</strong>.</p>
 
-<script src="payroll.js"></script>
+<button id="btnCalcular">Calcular Nómina</button>
+
+<div id="resultado"></div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
