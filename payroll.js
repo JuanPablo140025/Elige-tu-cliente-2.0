@@ -21,8 +21,12 @@ let totalNomina = 0;
 
 console.log("📋 Generando nómina mensual...\n");
 
+// contenedor HTML
+const contenedor = document.getElementById("nomina");
+
 // Bucle principal
 for (let i = 0; i < freelancers.length; i++) {
+
   const empleado = freelancers[i];
   const pago = calcularPago(empleado.horas, empleado.tarifa);
 
@@ -31,7 +35,19 @@ for (let i = 0; i < freelancers.length; i++) {
   console.log(
     `👤 ${empleado.nombre} | Horas: ${empleado.horas} | Tarifa: $${empleado.tarifa}/h → Pago: $${pago}`
   );
+
+  contenedor.innerHTML += `
+  <div class="empleado">
+    <span class="nombre">${empleado.nombre}</span>
+    <span>Horas: ${empleado.horas}</span>
+    <span>Tarifa: $${empleado.tarifa}</span>
+    <span>Pago: $${pago}</span>
+  </div>
+  `;
 }
 
 console.log("\n💰 Total de la nómina: $" + totalNomina);
 console.log("✅ Nómina generada correctamente.");
+
+document.getElementById("totalNomina").textContent =
+"💰 Total de la nómina: $" + totalNomina;
