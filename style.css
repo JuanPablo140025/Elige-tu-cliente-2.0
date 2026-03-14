@@ -1,0 +1,87 @@
+body{
+margin:0;
+font-family: "Courier New", monospace;
+
+/* ESTE ES EL FONDO QUE DEBE QUEDARSE */
+background: radial-gradient(circle at top,#1b0030,#000);
+
+color:#00fff7;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:40px;
+}
+
+h1{
+font-size:42px;
+color:#ff00ff;
+text-shadow:0 0 10px #ff00ff,0 0 25px #ff00ff;
+}
+
+/* CONTENEDOR */
+
+.container{
+width:80%;
+margin:auto;
+}
+
+/* TARJETA */
+
+.card{
+
+/* QUITAMOS EL BLANCO */
+background: rgba(10,0,30,0.7);
+
+border:2px solid #00fff7;
+padding:25px;
+margin-top:20px;
+border-radius:15px;
+
+box-shadow:
+0 0 10px #00fff7,
+0 0 25px #00fff7;
+
+}
+
+/* BOTON */
+
+button{
+
+background:#ff00ff;
+border:none;
+padding:14px 25px;
+font-size:18px;
+color:white;
+cursor:pointer;
+border-radius:8px;
+
+box-shadow:0 0 10px #ff00ff;
+
+}
+
+button:hover{
+background:#ff4dff;
+}
+
+/* RESULTADO */
+
+#resultado{
+
+margin-top:20px;
+padding:20px;
+
+background: rgba(0,0,0,0.6);
+
+border:2px solid #00fff7;
+
+min-height:120px;
+
+}
+
+.empleado{
+padding:8px;
+border-bottom:1px dashed #00fff7;
+}
