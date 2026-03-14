@@ -1,60 +1,60 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Tahoma, sans-serif;
+}
+
 body{
-font-family: Arial;
-background:#f4f4f4;
-padding:30px;
+background: linear-gradient(135deg,#1f4037,#99f2c8);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:15px;
+width:700px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 h1{
 text-align:center;
+color:#1f4037;
+margin-bottom:10px;
 }
 
-form{
-background:white;
-padding:20px;
+.subtitulo{
+text-align:center;
+margin-bottom:30px;
+color:#555;
+}
+
+.empleado{
+background:#f5f5f5;
+padding:15px;
 border-radius:10px;
-max-width:400px;
-margin:auto;
+margin-bottom:10px;
 display:flex;
-flex-direction:column;
-gap:10px;
+justify-content:space-between;
+transition:0.3s;
 }
 
-input{
-padding:8px;
+.empleado:hover{
+background:#e9fff7;
+transform:scale(1.02);
 }
 
-button{
-padding:10px;
-background:#2a7cff;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
+.nombre{
+font-weight:bold;
 }
 
-button:hover{
-background:#1a5edb;
-}
-
-.error{
-color:red;
+.total{
+margin-top:30px;
 text-align:center;
-margin-top:10px;
-}
-
-.exito{
-color:green;
-text-align:center;
-margin-top:10px;
-}
-
-#resultado{
-margin-top:20px;
-text-align:center;
-background:white;
-padding:20px;
-border-radius:10px;
-max-width:500px;
-margin-left:auto;
-margin-right:auto;
+font-size:22px;
+color:#1f4037;
 }
