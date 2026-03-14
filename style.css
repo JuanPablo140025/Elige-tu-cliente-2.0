@@ -1,60 +1,87 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, Tahoma, sans-serif;
-}
-
 body{
-background: linear-gradient(135deg,#1f4037,#99f2c8);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+margin:0;
+font-family: "Courier New", monospace;
+
+/* ESTE ES EL FONDO QUE DEBE QUEDARSE */
+background: radial-gradient(circle at top,#1b0030,#000);
+
+color:#00fff7;
 }
 
-.container{
-background:white;
+/* HEADER */
+
+header{
+text-align:center;
 padding:40px;
-border-radius:15px;
-width:700px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 h1{
-text-align:center;
-color:#1f4037;
-margin-bottom:10px;
+font-size:42px;
+color:#ff00ff;
+text-shadow:0 0 10px #ff00ff,0 0 25px #ff00ff;
 }
 
-.subtitulo{
-text-align:center;
-margin-bottom:30px;
-color:#555;
+/* CONTENEDOR */
+
+.container{
+width:80%;
+margin:auto;
+}
+
+/* TARJETA */
+
+.card{
+
+/* QUITAMOS EL BLANCO */
+background: rgba(10,0,30,0.7);
+
+border:2px solid #00fff7;
+padding:25px;
+margin-top:20px;
+border-radius:15px;
+
+box-shadow:
+0 0 10px #00fff7,
+0 0 25px #00fff7;
+
+}
+
+/* BOTON */
+
+button{
+
+background:#ff00ff;
+border:none;
+padding:14px 25px;
+font-size:18px;
+color:white;
+cursor:pointer;
+border-radius:8px;
+
+box-shadow:0 0 10px #ff00ff;
+
+}
+
+button:hover{
+background:#ff4dff;
+}
+
+/* RESULTADO */
+
+#resultado{
+
+margin-top:20px;
+padding:20px;
+
+background: rgba(0,0,0,0.6);
+
+border:2px solid #00fff7;
+
+min-height:120px;
+
 }
 
 .empleado{
-background:#f5f5f5;
-padding:15px;
-border-radius:10px;
-margin-bottom:10px;
-display:flex;
-justify-content:space-between;
-transition:0.3s;
-}
-
-.empleado:hover{
-background:#e9fff7;
-transform:scale(1.02);
-}
-
-.nombre{
-font-weight:bold;
-}
-
-.total{
-margin-top:30px;
-text-align:center;
-font-size:22px;
-color:#1f4037;
+padding:8px;
+border-bottom:1px dashed #00fff7;
 }
